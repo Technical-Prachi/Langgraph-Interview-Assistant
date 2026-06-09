@@ -26,7 +26,7 @@ export default function InterviewBox() {
     setReport(null);
 
     const res = await fetch(
-      "http://127.0.0.1:8000/start",
+      "https://langgraph-interview-assistant.onrender.com/start",
       {
         method: "POST",
         headers: {
@@ -64,7 +64,7 @@ export default function InterviewBox() {
         event.results[0][0].transcript;
 
       const res = await fetch(
-        "http://127.0.0.1:8000/evaluate",
+        "https://langgraph-interview-assistant.onrender.com/evaluate",
         {
           method: "POST",
           headers: {
