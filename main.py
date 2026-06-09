@@ -25,7 +25,9 @@ class EvalInput(BaseModel):
     question: str
     answer: str
 
-
+@app.get("/")
+def home():
+    return {"status": "running"}
 # -------------------------
 # START
 # -------------------------
